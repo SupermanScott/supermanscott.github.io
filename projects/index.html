@@ -1,22 +1,8 @@
 ---
-nav: blog
-subnav: home
+title: Projects
+nav: projects
 layout: default
 ---
-{% for page in site.posts %}
-{% if page.front == true%}
-<article class="post no-border">
-    <div class="post-header">
-        <p class="date">{{page.date | date: "%h %d, %Y"}}</p>
-        <a href="{{page.id}}"><h1>{{ page.title }}</h1></a>
-    </div>
-    <div class="post-body">
-      {{page.excerpt}}
-    {% endif %}
-    {% endfor %}
-</article>
-
-<h1>Projects</h1>
 <div id="projects">
   {% for page in site.pages %}
     {% if page.box == true %}

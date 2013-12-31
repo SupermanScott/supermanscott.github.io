@@ -1,4 +1,4 @@
 pygments: true
-permalink: /post/:title
+permalink: /post/:year/:month/:day/:title
 exclude: ['Gemfile','Gemfile.lock','Rakefile','.git']
 paginate: 4

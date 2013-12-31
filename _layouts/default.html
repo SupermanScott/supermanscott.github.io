@@ -4,7 +4,11 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>{{ page.title }} | Tyler Benziger</title>
+  {% if page.title %}
+  <title>{{ page.title }} | Scott Reynolds</title>
+  {% else %}
+  <title>Scott Reynolds</title>
+  {% endif %}
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
   <link rel="shortcut icon" href="{% include avatar_url %}?s=16">
@@ -19,9 +23,6 @@
 
 <body>
 <div class="wrapper">
-    <div class="github">
-      <a href="https://github.com/tybenz/exemplar"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
-    </div>
     {% include header.html %}
 
     <section id="main">
