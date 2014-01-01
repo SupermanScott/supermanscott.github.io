@@ -87,9 +87,9 @@ class IdempotentDocument(Document):
                 raise UpdateQueryError(
                     "Document has changed since it was last"\
                         "loaded")
-            # This means it is a new document not loaded from
-            # the database. Try to save it and if it fails,
-            # that means someone beat us too it.
+        # This means it is a new document not loaded from
+        # the database. Try to save it and if it fails,
+        # that means someone beat us too it.
         elif not old_version:
             self['_id'] = new_version
             try:
