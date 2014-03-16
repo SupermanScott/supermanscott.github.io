@@ -118,7 +118,7 @@ A server is picked based on the least amount of load and then a connection is pu
 
 Improvements
 ============
-So this proxy does add latency to the entire request and that is expected. It is still way to high to be really used in production. The least-loaded function should really take into account the priority assigned in the configuration file. This priority was intended to instruct a router to bias certain Redis instances over the others. This would come in handy for cross datacenter deploys. I would also really like to have other heuristics other then user cpu change. I believe it is a good proxy for how much load the server is doing. In one test with lots of keys, I ran keys * command on one server and that server received less queries then the other server within the pool. Other heuristics that might be interesting:
+So this proxy does add latency to the entire request and that is expected. It is still way to high to be really used in production. The least-loaded function should really take into account the priority assigned in the configuration file. This priority was intended to instruct a router to bias certain Redis instances over the others. This would come in handy for cross datacenter deploys. I would also really like to have other heuristics other then user cpu change. In one test with lots of keys, I ran keys * command on one server and that server received less queries then the other server within the pool. Other heuristics that might be interesting:
 1. total_commands_processed
 2. mem_fragmentation_ratio
 3. rdb_changes_since_last_save
