@@ -1,5 +1,5 @@
 ---
-title: Ratis -- A Redis Proxy
+title: Ratis - A Redis Proxy
 nav: blog
 layout: default
 summary: A smart load balancer for Redis that properly handles transactions.
