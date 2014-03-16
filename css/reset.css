@@ -1,4 +1,4 @@
-/* line 12, ../_sass/reset.scss */
+/* line 1, ../_sass/reset.scss */
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -82,7 +82,7 @@ mark {
 pre, code, kbd, samp {
   font-family: monospace, serif;
   _font-family: 'courier new', monospace;
-  font-size: 1em; }
+  font-size: 0.75em; }
 
 /* line 108, ../_sass/reset.scss */
 pre {
